@@ -1,7 +1,7 @@
 .header
   i.fa.fa-exchange-alt.fa-lg.toggle-sidebar
   .dropdown.notifications-container
-    i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+    i.fa.fa-bell.fa-lg.header-icon.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
     .dropdown-menu(aria-labelledby='notifications')
       .noti-head
         | Notification
@@ -24,3 +24,33 @@
             i.fa.fa-ethereum.fa-lg
             | You Got Something From Ocean
       .noti-foot: a(href="#") View All Notifications
+  i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+  .dropdown.usermenu-container
+    .username#usermenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      img.avatar.rounded-circle(src="imgs/avatar.jpeg", alt="User Avatar")
+      span.user Obada Sarya
+      i.fa.fa-angle-down.fa-lg
+    .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+      .user-info
+        h3 Obada Sarya
+        p Premium Member
+      hr
+      ul.activities-list.list-unstyled
+        li Add Comment "How does it work ?"
+        li Created Category Post "Science"
+        li Created Chart on Charts Page
+        li Add Comment "Wachha doin'"
+      hr
+      .row.usermenu-links
+        .col
+          .link-box
+            i.fa.fa-cogs.fa-lg.fa-fw
+            span Settings
+        .col
+          .link-box
+            i.fa.fa-user.fa-lg.fa-fw
+            span Profile
+        .col
+          .link-box
+            i.fa.fa-power-off.fa-lg.fa-fw
+            span Logout
