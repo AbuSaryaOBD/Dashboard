@@ -3,4 +3,24 @@
   .dropdown.notifications-container
     i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
     .dropdown-menu(aria-labelledby='notifications')
-      | Notification
+      .noti-head
+        | Notification
+        span 50
+      .noti-content
+        ul.list-unstyled
+          li
+            i.far.fa-envelope.fa-lg
+            | You Got Email From Ocean
+          li
+            i.far.fa-money-bill-alt.fa-lg
+            | You Got Money From Ocean
+          li
+            i.far.fa-thumbs-up.fa-lg
+            | You Got Like From Ocean
+          li
+            i.far.fa-envelope.fa-lg
+            | You Got Email From Ocean
+          li
+            i.fa.fa-ethereum.fa-lg
+            | You Got Something From Ocean
+      .noti-foot: a(href="#") View All Notifications
